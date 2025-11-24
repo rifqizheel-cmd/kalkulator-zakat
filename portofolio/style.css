@@ -1,0 +1,29 @@
+body{
+    min-width: 100vh;
+    padding: 20px;
+}
+
+.kontainer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kontainer h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.gallery{
+    display: grid;
+    /* otomatis mengisi kekosongan dengan minimal lebar 200px */
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    gap: 20px;
+}

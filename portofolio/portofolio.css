@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #F5F7FA;
+    color: #1F2937;
+    line-height: 1.6;
+}
+
+.kontainer{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.LOGO{
+    display: flex;
+    align-items: center;
+}
+
+.main-header{
+    background-color: #7F8C8D;
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #34495E;
+}
+
+.main-header .kontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sekolah{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 4px 6px;
+    font-weight: 400;
+    transition: color 0.3 ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-nav a:hover{
+    color: #507ab9;
+}
+
+.hero-section{
+    padding: 80px;
+    text-align: center;
+}
+
+.hero-kontainer{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text{
+    flex: 1;
+    text-align: left;
+}
+
+.hero-text h1{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #3B82F6;
+}
+
+.hero-text p{
+    font-size: 20px;
+    max-width: 450px;
+    margin-bottom: 30px;
+    color: #4B5563;
+}
+
+.hero-image{
+    flex: 1;
+    border-radius: 100px;
+}
+
+.features-section{
+    background-color: #E3E8EF;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.features-card{
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+    flex: 1;
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+
+.features-card:hover{
+    transform: translateY(10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.features-icon{
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.features-card p{
+    font-size: 16px;
+    color: #4B5563;
+}
+
+.features-card h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.main-footer{
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+}
