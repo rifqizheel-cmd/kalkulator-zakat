@@ -46,6 +46,7 @@ section {
     padding: 80px 0;
 }
 
+/* ================= BUTTON ================= */
 .btn {
     display: inline-block;
     background-color: #7c9458;
@@ -54,7 +55,7 @@ section {
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease;
 }
 
 .btn:hover {
@@ -62,13 +63,14 @@ section {
     transform: translateY(-2px);
 }
 
+/* ================= NAVBAR ================= */
 .navbar {
     background-color: #d3c7a4;
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0, 5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar .kontainer {
@@ -96,6 +98,7 @@ section {
     color: #4e4ea1;
 }
 
+/* ================= HERO ================= */
 #hero {
     background-color: #d6cfba;
     text-align: center;
@@ -114,9 +117,10 @@ section {
     color: #434346;
 }
 
+/* ================= PROJECT ================= */
 #project {
     background-color: #202021;
-    color: #ffffff;
+    color: #fff;
 }
 
 .Project-grid {
@@ -128,7 +132,7 @@ section {
 .Project-card {
     background-color: #d3c7a4;
     border-radius: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0, 5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -147,14 +151,13 @@ section {
 
 .Project-info {
     padding: 25px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .Project-info h3 {
     margin: 10px 0;
-
 }
 
 .Project-text {
@@ -173,16 +176,18 @@ section {
 }
 
 .Project-link {
-    margin-bottom: auto;
+    margin-top: auto;
     color: #2d2d9bed;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
+/* ================= CONTACT ================= */
 #kontak {
     text-align: center;
 }
 
+/* ================= FOOTER ================= */
 .footer {
     background-color: #48484d;
     color: white;
@@ -191,96 +196,19 @@ section {
     margin-top: 60px;
 }
 
-.about-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    align-items: center;
-    gap: 40px;
-}
-
-.about-image img{
-    /* width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
-    object-fit: cover; */
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 100px;
-}
-
-.about-content p{
-    margin-bottom: 15px;
-    color: #48484d;
-    line-height: 1.8;
-}
-
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
+
     .nav-link {
         display: none;
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .section-title {
         font-size: 2rem;
         margin-bottom: 40px;
     }
-
-
-}
-
-.kontainerr{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-
-.features-section{
-    background-color: #d6cfba;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.section-titlee{
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 60px;
-}
-
-.features-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.features-card{
-    background-color: #d9d6cd;
-    padding: 40px;
-    border-radius: 20px;
-    flex: 1;
-    transition: transform 0.3 ease, box-shadow 0.3 ease;
-}
-
-.features-card:hover{
-    transform: translateY(10px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0, 4  );
-}
-
-.features-icon{
-    height: 60px;
-    margin-bottom: 20px;
-}
-
-.features-card p{
-    font-size: 16px;
-    color: #4B5563;
-}
-
-.features-card h3{
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 15px;
 }
